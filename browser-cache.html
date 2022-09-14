@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Browser Cache and Edge Cache Explained</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./build.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      sizes="16x16 32x32"
+      href="https://dodov.dev/media/site/7c35252aa6-1640615600/favicon-dark-plus.png"
+      id="favicon"
+    />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <nav>
+        <ul>
+          <a href="./index.html"><li class="home">home</li></a>
+          <a href="./blog.html"><li class="blog">blog</li></a>
+          <li class="dont_build active_tab">
+            browser-cache-and-edge-cache-explained
+            <a href="./blog.html" class="tab_close" title="Close Article">x</a>
+          </li>
+          <a href="./projects.html"><li class="projects">projects</li></a>
+        </ul>
+      </nav>
+
+      <div class="main">
+        <div class="num_line">
+          <a href="#"><p>1</p></a>
+          <a href="#"><p>2</p></a>
+          <a href="#"><p>3</p></a>
+          <a href="#"><p>4</p></a>
+          <a href="#"><p>5</p></a>
+          <a href="#"><p>6</p></a>
+          <a href="#"><p>7</p></a>
+          <a href="#"><p>8</p></a>
+          <a href="#"><p>9</p></a>
+          <a href="#"><p>10</p></a>
+          <a href="#"><p>11</p></a>
+          <a href="#"><p>12</p></a>
+          <a href="#"><p>13</p></a>
+          <a href="#"><p>14</p></a>
+          <a href="#"><p>15</p></a>
+          <a href="#"><p>16</p></a>
+          <a href="#"><p>17</p></a>
+          <a href="#"><p>18</p></a>
+          <a href="#"><p>19</p></a>
+          <a href="#"><p>20</p></a>
+          <a href="#"><p>21</p></a>
+          <a href="#"><p>22</p></a>
+          <a href="#"><p>23</p></a>
+          <a href="#"><p>24</p></a>
+          <a href="#"><p>25</p></a>
+          <a href="#"><p>26</p></a>
+          <a href="#"><p>27</p></a>
+          <a href="#"><p>28</p></a>
+          <a href="#"><p>29</p></a>
+          <a href="#"><p>30</p></a>
+          <a href="#"><p>31</p></a>
+          <a href="#"><p>33</p></a>
+          <a href="#"><p>33</p></a>
+          <a href="#"><p>34</p></a>
+          <a href="#"><p>35</p></a>
+          <a href="#"><p>36</p></a>
+          <a href="#"><p>37</p></a>
+          <a href="#"><p>38</p></a>
+          <a href="#"><p>39</p></a>
+          <a href="#"><p>40</p></a>
+          <a href="#"><p>41</p></a>
+          <a href="#"><p>42</p></a>
+          <a href="#"><p>43</p></a>
+          <a href="#"><p>44</p></a>
+          <a href="#"><p>45</p></a>
+          <a href="#"><p>46</p></a>
+          <a href="#"><p>47</p></a>
+          <a href="#"><p>48</p></a>
+          <a href="#"><p>49</p></a>
+          <a href="#"><p>50</p></a>
+          <a href="#"><p>51</p></a>
+          <a href="#"><p>52</p></a>
+          <a href="#"><p>53</p></a>
+          <a href="#"><p>54</p></a>
+          <a href="#"><p>55</p></a>
+          <a href="#"><p>56</p></a>
+          <a href="#"><p>57</p></a>
+          <a href="#"><p>58</p></a>
+          <a href="#"><p>59</p></a>
+          <a href="#"><p>60</p></a>
+          <a href="#"><p>61</p></a>
+          <a href="#"><p>62</p></a>
+          <a href="#"><p>63</p></a>
+          <a href="#"><p>64</p></a>
+          <a href="#"><p>65</p></a>
+          <a href="#"><p>66</p></a>
+          <a href="#"><p>67</p></a>
+          <a href="#"><p>68</p></a>
+          <a href="#"><p>69</p></a>
+          <a href="#"><p>70</p></a>
+          <a href="#"><p>71</p></a>
+          <a href="#"><p>72</p></a>
+          <a href="#"><p>73</p></a>
+          <a href="#"><p>74</p></a>
+          <a href="#"><p>75</p></a>
+          <a href="#"><p>76</p></a>
+          <a href="#"><p>77</p></a>
+          <a href="#"><p>78</p></a>
+          <a href="#"><p>79</p></a>
+          <a href="#"><p>80</p></a>
+          <a href="#"><p>81</p></a>
+          <a href="#"><p>82</p></a>
+          <a href="#"><p>83</p></a>
+          <a href="#"><p>84</p></a>
+          <a href="#"><p>85</p></a>
+          <a href="#"><p>86</p></a>
+          <a href="#"><p>88</p></a>
+          <a href="#"><p>88</p></a>
+          <a href="#"><p>89</p></a>
+          <a href="#"><p>90</p></a>
+          <a href="#"><p>91</p></a>
+          <a href="#"><p>92</p></a>
+          <a href="#"><p>93</p></a>
+          <a href="#"><p>94</p></a>
+          <a href="#"><p>95</p></a>
+          <a href="#"><p>96</p></a>
+          <a href="#"><p>97</p></a>
+          <a href="#"><p>98</p></a>
+          <a href="#"><p>99</p></a>
+          <a href="#"><p>100</p></a>
+          <a href="#"><p>101</p></a>
+          <a href="#"><p>102</p></a>
+          <a href="#"><p>103</p></a>
+          <a href="#"><p>104</p></a>
+          <a href="#"><p>105</p></a>
+          <a href="#"><p>106</p></a>
+          <a href="#"><p>107</p></a>
+          <a href="#"><p>108</p></a>
+          <a href="#"><p>109</p></a>
+          <a href="#"><p>110</p></a>
+          <a href="#"><p>111</p></a>
+          <a href="#"><p>112</p></a>
+          <a href="#"><p>113</p></a>
+          <a href="#"><p>114</p></a>
+          <a href="#"><p>115</p></a>
+          <a href="#"><p>116</p></a>
+          <a href="#"><p>117</p></a>
+          <a href="#"><p>118</p></a>
+          <a href="#"><p>119</p></a>
+          <a href="#"><p>120</p></a>
+          <a href="#"><p>121</p></a>
+          <a href="#"><p>122</p></a>
+          <a href="#"><p>123</p></a>
+          <a href="#"><p>124</p></a>
+          <a href="#"><p>125</p></a>
+          <a href="#"><p>126</p></a>
+          <a href="#"><p>127</p></a>
+          <a href="#"><p>128</p></a>
+          <a href="#"><p>129</p></a>
+          <a href="#"><p>130</p></a>
+          <a href="#"><p>131</p></a>
+          <a href="#"><p>133</p></a>
+          <a href="#"><p>133</p></a>
+          <a href="#"><p>134</p></a>
+          <a href="#"><p>135</p></a>
+          <a href="#"><p>136</p></a>
+          <a href="#"><p>137</p></a>
+          <a href="#"><p>138</p></a>
+          <a href="#"><p>139</p></a>
+          <a href="#"><p>140</p></a>
+          <a href="#"><p>141</p></a>
+          <a href="#"><p>142</p></a>
+          <a href="#"><p>143</p></a>
+          <a href="#"><p>144</p></a>
+          <a href="#"><p>145</p></a>
+          <a href="#"><p>146</p></a>
+          <a href="#"><p>147</p></a>
+          <a href="#"><p>148</p></a>
+          <a href="#"><p>149</p></a>
+          <a href="#"><p>150</p></a>
+          <a href="#"><p>151</p></a>
+          <a href="#"><p>152</p></a>
+          <a href="#"><p>153</p></a>
+          <a href="#"><p>154</p></a>
+          <a href="#"><p>155</p></a>
+          <a href="#"><p>156</p></a>
+          <a href="#"><p>157</p></a>
+          <a href="#"><p>158</p></a>
+          <a href="#"><p>159</p></a>
+          <a href="#"><p>160</p></a>
+          <a href="#"><p>161</p></a>
+          <a href="#"><p>162</p></a>
+          <a href="#"><p>163</p></a>
+          <a href="#"><p>164</p></a>
+          <a href="#"><p>165</p></a>
+          <a href="#"><p>166</p></a>
+          <a href="#"><p>167</p></a>
+          <a href="#"><p>168</p></a>
+          <a href="#"><p>169</p></a>
+          <a href="#"><p>170</p></a>
+          <a href="#"><p>171</p></a>
+          <a href="#"><p>172</p></a>
+          <a href="#"><p>173</p></a>
+          <a href="#"><p>174</p></a>
+          <a href="#"><p>175</p></a>
+          <a href="#"><p>176</p></a>
+          <a href="#"><p>177</p></a>
+          <a href="#"><p>178</p></a>
+          <a href="#"><p>179</p></a>
+          <a href="#"><p>180</p></a>
+          <a href="#"><p>181</p></a>
+          <a href="#"><p>182</p></a>
+          <a href="#"><p>183</p></a>
+          <a href="#"><p>184</p></a>
+          <a href="#"><p>185</p></a>
+          <a href="#"><p>186</p></a>
+          <a href="#"><p>188</p></a>
+          <a href="#"><p>188</p></a>
+          <a href="#"><p>189</p></a>
+          <a href="#"><p>190</p></a>
+          <a href="#"><p>191</p></a>
+          <a href="#"><p>192</p></a>
+          <a href="#"><p>193</p></a>
+          <a href="#"><p>194</p></a>
+          <a href="#"><p>195</p></a>
+          <a href="#"><p>196</p></a>
+          <a href="#"><p>197</p></a>
+          <a href="#"><p>198</p></a>
+          <a href="#"><p>199</p></a>
+        </div>
+
+        <article>
+          <header>
+            <div class="header_left browser_header_left">
+              <h1>Browser Cache and Edge Cache Explained</h1>
+              <p>You updated it? Well, yes, but not really.</p>
+            </div>
+            <div class="header_right">
+              <p title="Tuesday,February 8,2022, 16:00 EET">08 Feb 2022</p>
+              <p>182 lines</p>
+            </div>
+          </header>
+
+          <img
+            src="./img/browser-edge.png"
+            alt="Terminal command (rm -rf
+          .git), surrounded by random characters."
+            id="img1"
+          />
+
+          <div id="modal1" class="modal1">
+            <img
+              src="./img/browser-edge.png"
+              alt="Terminal command (rm -rf
+          .git), surrounded by random characters."
+            />
+          </div>
+
+          <p>Does the following sound familiar?</p>
+          <br />
+          <blockquote class="browser_green">
+            <p>
+              "The new feature is live."<br />
+              "I can't see it."<br />
+              "Have you cleared your browser cache?" <br />
+              "Yes. It's still not visible."<br />
+              &MediumSpace;
+              <strong><em>"Hmmm…"</em></strong>
+            </p>
+          </blockquote>
+
+          <br />
+
+          <p>
+            This could happen when there are multiple layers of
+            <a href="#" class="link">caching</a> in play and one of them has not
+            expired. If you've used something like
+            <a href="#" class="link">Cloudflare CDN</a> , you've likely ran into
+            this.
+          </p>
+
+          <h2>What is Browser Caching?</h2>
+          <p>
+            Let's say your website has a logo in the header and it appears on
+            all pages. When users land on your website and start browsing,
+            they'll be downloading the <strong>same</strong> logo on
+            <strong>every</strong> page load. This inefficiency increases
+            bandwidth costs and load times.
+          </p>
+          <br />
+          <p>
+            When sending the logo to the user, your server can also provide the
+            <a href="#" style="text-underline-offset: 5px">
+              <code style="font-size: 17px">Cache-Control</code> response
+              header</a
+            >
+            with an expiration value like <code>max-‍age=604800</code>. This
+            will tell the browser to store the logo locally, on the user's hard
+            drive, for 604800 seconds, which is 7 days. Until that time passes,
+            whenever your website references the logo through the same URL, the
+            user's browser will use its cached version. After that, the browser
+            will request the logo from your server once again and cache it for
+            another 7 days.
+          </p>
+
+          <h2>What is an Edge?</h2>
+          <p>
+            If your audience is mainly European, it would probably make sense to
+            put your server in London, for example. But if your website starts
+            receiving traffic from America, those requests would have to travel
+            an entire ocean, which can make them several times slower, due to
+            <a href="#" class="link">latency</a> . With a
+            <a href="#" class="link">CDN</a> , you have a system of servers
+            spread throughout the world that
+            <a href="#" class="link">proxy</a> user traffic to your server and
+            <a href="#" class="link">solve this performance issue</a> .
+          </p>
+          <br />
+          <p>
+            Among the <a href="#" class="link">hundreds of servers</a> in a CDN,
+            the geographically closest one to a user is called an edge and is
+            the one that this user's browser directly communicates with:
+          </p>
+
+          <!-- SECOND IMAGE HERE -->
+          <figure>
+            <img
+              src="./img/browsercache2.png"
+              alt="Response flow from server to user over a CDN"
+              id="img2"
+            />
+          </figure>
+          <figcaption>Response flow from server to user over a CDN</figcaption>
+
+          <div id="modal2" class="modal2">
+            <img
+              src="./img/browsercache2.png"
+              alt="Response flow from server to user over a CDN"
+            />
+          </div>
+          <!-- SECOND IMAGE HERE -->
+
+          <h2>What is Edge Caching?</h2>
+          <p>
+            While browser caching helps with many requests by the same user, it
+            doesn't solve the issue of many users making requests, because each
+            user has their own browser with their own cache. To fix this, you
+            need a shared cache.
+          </p>
+          <br />
+          <p>
+            With a CDN, all user requests are funneled through the closest edge
+            server. If that server caches the responses, it'll be able to serve
+            those users without having to bother your own server. This means
+            that it no longer matters if you have 1 user or 10000, because once
+            that first response for a resource is served and cached, the load
+            shifts from your server to the CDN, which can serve the other 9999
+            by itself.
+          </p>
+          <br />
+          <p>
+            Cloudflare caches only static assets
+            <a href="#" class="link">by default</a> , such as images, fonts,
+            scripts, etc. The HTML containing the page content is not cached,
+            because if you have an e-commerce store, for example, each user will
+            have their own shopping cart, and if you cache that, the next user
+            will see the previous one's items. On the other hand, an image is
+            expected to be the same for every user and can safely be cached.
+          </p>
+          <br />
+          <p>
+            Sites without shopping carts and other dynamic content, such as
+            blogs, can opt in to <a href="#" class="link">cache everything</a> .
+            This makes it possible for an edge to serve entire pages all by
+            itself, without having to contact your server, as long as everything
+            is cached. This way, you can have a very weak server, yet handle
+            thousands of requests per second, because the load is mainly on the
+            CDN.
+          </p>
+          <br />
+
+          <h2>Cache Invalidation</h2>
+          <p>
+            The hard part in caching is picking a
+            <a href="#" class="link">time to live (TTL)</a>, which determines
+            when an entry is stale and should be discarded.
+          </p>
+          <br />
+          <p>
+            Images and other assets can be cached for longer periods, because
+            even if you pick a way too long TTL, you can change the URL to the
+            resource and trigger a fresh request-response cycle:
+          </p>
+          <br />
+
+          <div class="code_block">
+            <code
+              >https://example.com/about-us/image.jpg<strong
+                >?version=2</strong
+              ></code
+            >
+          </div>
+          <br />
+          <p>
+            However, if you've chosen to cache the HTML content of your pages as
+            well, you'd have to get around that too, since changing the image
+            URL means changing the HTML. So you'd have to change the page URL as
+            well:
+          </p>
+          <br />
+
+          <div class="code_block">
+            <code>https://example.com/about-us<strong>?version=2</strong></code>
+          </div>
+          <br />
+          <p>
+            This is where things get tricky, because even if your web framework
+            can easily change all links to the updated page, every other site on
+            the internet also has to do it. That's impossible, so you have to
+            pick a window of time that you're comfortable with and in which
+            users may see outdated content.
+          </p>
+          <br />
+          <p>If you have the following setup:</p>
+          <br />
+          <ul>
+            <li class="list_items">
+              <div>
+                <p>Browser cache TTL: <strong>30 minutes</strong></p>
+              </div>
+            </li>
+            <li class="list_items">
+              <div>
+                <p>Edge cache TTL: <strong>1 minute</strong></p>
+              </div>
+            </li>
+          </ul>
+          <br />
+          <p>…there are several possible outcomes:</p>
+          <br />
+          <ol>
+            <li>
+              <p>
+                If a change happened over 30 minutes ago, both caches would have
+                expired and it's guaranteed that the user will see the updated
+                version.
+              </p>
+            </li>
+            <br />
+            <li>
+              <p>
+                If a change happened over 1 minute ago, only the edge cache is
+                guaranteed to have expired. If a user has seen the page within
+                the last 30 minutes and is cached by their browser, they can see
+                the change by clearing their browser cache, opening an incognito
+                window, or doing a <a href="#" class="link">hard reload</a> .
+              </p>
+            </li>
+            <br />
+            <li>
+              <p>
+                If a change happened less than 1 minute ago, both caches would
+                still be considered fresh. Users will not be able to see the
+                update, even if they clear their browser cache, because the
+                closest edge server would still return the old version. The only
+                solution here is for the website owner to prematurely force the
+                cache to become stale by
+                <a href="#" class="link">purging it</a>.
+              </p>
+            </li>
+          </ol>
+
+          <h2>Conclusion</h2>
+          <p>
+            <strong>Browser cache</strong> helps with subsequent requests by the
+            same user and makes your website feel snappy, because your assets
+            don't have to travel over the internet.
+          </p>
+          <br />
+          <p>
+            <strong>Edge cache</strong> helps with requests by a geographically
+            close group of users and can greatly reduce server load while
+            improving response times in distant countries.
+          </p>
+          <br />
+          <p>
+            Pick a lower TTL to reduce the chance of outdated content, or a
+            higher TTL for better cache effectiveness, but be ready to change
+            URLs, open incognito windows, and purge cache.
+          </p>
+        </article>
+
+        <div class="separator">
+          <span>//</span>
+          <hr />
+        </div>
+
+        <div class="foot">
+          <ul class="foot_links">
+            <li><a class="link">GitHub</a></li>
+            <span>•</span>
+            <li><a class="link">Twitter</a></li>
+            <span>•</span>
+            <li><a class="link">LinkedIn</a></li>
+            <span>•</span>
+            <li><a class="link">Instagram</a></li>
+          </ul>
+
+          <div class="foot_theme">
+            <select name="theme_select" id="theme_select">
+              <option value="dark">Dark+</option>
+              <option value="light">Light+</option>
+              <option value="monokai">Monokai</option>
+              <option value="g-dark">GitHub Dark</option>
+              <option value="g-light">GitHub Light</option>
+              <option value="solarized">Solarized Light</option>
+            </select>
+            <span class="theme_arrow">↓</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="./blog.js"></script>
+  </body>
+</html>
