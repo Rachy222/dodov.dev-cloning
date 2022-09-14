@@ -1,2 +1,2 @@
 # dodov.dev
-[our dodov](https://jegedenifemi.github.io/dodov.dev/)
+[our dodov](https://rachy222.github.io/dodov.dev-cloning/)
